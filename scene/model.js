@@ -10,7 +10,7 @@ var model = new THREE.Group(); //声明一个组对象，用来添加城市三�
 var loader = new THREE.FileLoader();
 loader.setResponseType('json')
 //城市建筑数据解析
-loader.load('./scene/model/上海0.06.json', function (data) {
+loader.load('./scene/model/上海0.10.json', function (data) {
   var buildGroup = new THREE.Group(); //作为所有每栋楼Mesh的父对象
   data.features.forEach(build => {
     if (build.geometry) {
